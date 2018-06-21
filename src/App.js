@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import CardList from "./CardList";
 import { cats } from "./Cats";
 import SearchBox from "./SearchBox";
-
+import "./App.css"
 
 
 
@@ -29,7 +29,7 @@ class App extends Component {
 		})
      return (
 		<div className="tc">
-		    <h1>Cats!</h1>
+		    <h1 classname="f2">Cats!</h1>
 			<SearchBox searchChange={this.onSearchChange}/>
 		    <CardList cats={filteredCats} />
 	    </div>
