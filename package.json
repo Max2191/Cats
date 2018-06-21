@@ -2,12 +2,15 @@
   "name": "robots",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://myname.Max2191.io/Cats",
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4",
     "tachyons": "^4.10.0"
+  
   },
+
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -15,3 +18,4 @@
     "eject": "react-scripts eject"
   }
 }
+

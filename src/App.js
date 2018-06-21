@@ -32,15 +32,15 @@ componentDidMount() {
 		
 	
 	}
-
+// To do - destructure this.state.cats/searchfield 
 	render () {
 		const filteredCats = this.state.cats.filter(cats => {
 		return cats.name.toLowerCase().includes(this.state.searchfield.toLowerCase());	
 		})
-		if (this.state.cats.length === 0) {
-			return <h1> The cat's are coming as fast as they can!</h1> 
-		} else {
-     return (
+		// ternary for the loading screen:
+		return (this.state.cats.length === 0) ? 
+		 <h1> The cat's are coming as fast as they can!</h1> :
+       (
 		<div className="tc">
 		    <h1 classname="f2">Cats!</h1>
 			<SearchBox searchChange={this.onSearchChange}/>
@@ -49,9 +49,7 @@ componentDidMount() {
 		    </Scroll>
 	    </div>
 	);
- }
-
-	}
+  }
 }
 
 
