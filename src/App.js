@@ -39,7 +39,7 @@ componentDidMount() {
 		})
 		// ternary for the loading screen:
 		return (this.state.cats.length === 0) ? 
-		 <h1> The cat's are coming as fast as they can!</h1> :
+		 <h1> The cat's are Loading!</h1> :
        (
 		<div className="tc">
 		    <h1 classname="f2">Cats!</h1>
