@@ -15,4 +15,4 @@ const Scroll = (props) => {
 };
 
 
-export default Scroll
+export default Scroll;
